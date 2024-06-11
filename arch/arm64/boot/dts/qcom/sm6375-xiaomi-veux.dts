@@ -18,8 +18,8 @@
 /delete-node/ &pmk8350_pon;
 
 / {
-	model = "Sony Xperia 10 IV";
-	compatible = "sony,pdx225", "qcom,sm6375";
+	model = "Xiaomi Poco X4 Pro 5G";
+	compatible = "xiaomi,veux", "qcom,sm6375";
 	chassis-type = "handset";
 
 	chosen {
