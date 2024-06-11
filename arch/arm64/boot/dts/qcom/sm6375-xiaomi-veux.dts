@@ -29,10 +29,11 @@
 
 		framebuffer: framebuffer@85200000 {
 			compatible = "simple-framebuffer";
-			reg = <0 0x85200000 0 0xc00000>;
+			reg = <0 0x85200000 0 (1080 * 2400 * 4)>;
+			// reg = <0 0x85200000 0 0xc00000>;
 
 			width = <1080>;
-			height = <2520>;
+			height = <2400>;
 			stride = <(1080 * 4)>;
 			format = "a8r8g8b8";
 			/*
@@ -65,7 +66,8 @@
 
 	reserved-memory {
 		cont_splash_mem: memory@85200000 {
-			reg = <0 0x85200000 0 0xc00000>;
+			// reg = <0 0x85200000 0 0xc00000>;
+			reg = <0 0x85200000 0 (1080 * 2400 * 4)>;
 			no-map;
 		};
 
